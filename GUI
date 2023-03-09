@@ -1,0 +1,641 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local DayTime = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local Locals = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Fly = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Speed = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local CashEsp = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Anonymous = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Home = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local Local = Instance.new("TextButton")
+local Selectedaccount_circle = Instance.new("ImageLabel")
+local ScrollBar = Instance.new("ScrollingFrame")
+local Grey = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local Information = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Bell = Instance.new("ImageLabel")
+local Info1 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local Info2 = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local Info3 = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local Settingimage = Instance.new("TextButton")
+local Setting = Instance.new("ImageLabel")
+local UICorner_13 = Instance.new("UICorner")
+local Settings = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local UICorner_15 = Instance.new("UICorner")
+local Exit = Instance.new("TextButton")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
+local Theme = Instance.new("TextButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local Teleport = Instance.new("TextButton")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local Blur = Instance.new("Frame")
+local Blur_2 = Instance.new("ImageLabel")
+local UICorner_20 = Instance.new("UICorner")
+local Blur_3 = Instance.new("ImageLabel")
+local UICorner_21 = Instance.new("UICorner")
+local Teleports = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+local Bank = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local FoodStore = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Casino = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local GunStore = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+DayTime.Name = "DayTime"
+DayTime.Parent = ScreenGui
+DayTime.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+DayTime.BorderSizePixel = 0
+DayTime.Position = UDim2.new(0.305979282, 0, 0.31250006, 0)
+DayTime.Size = UDim2.new(0, 508, 0, 374)
+DayTime.ZIndex = -1
+
+UICorner.CornerRadius = UDim.new(0, 5)
+UICorner.Parent = DayTime
+
+Title.Name = "Title"
+Title.Parent = DayTime
+Title.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(-0.00062188576, 0, -0.000674895418, 0)
+Title.Size = UDim2.new(0, 508, 0, 70)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "DayTime V.1"
+Title.TextColor3 = Color3.fromRGB(153, 153, 153)
+Title.TextSize = 30.000
+Title.TextWrapped = true
+
+UICorner_2.Parent = Title
+
+Locals.Name = "Locals"
+Locals.Parent = DayTime
+Locals.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Locals.BorderColor3 = Color3.fromRGB(22, 22, 22)
+Locals.Position = UDim2.new(0.234251961, 0, 0.205888793, 0)
+Locals.Size = UDim2.new(0, 381, 0, 288)
+Locals.Visible = false
+
+UICorner_3.Parent = Locals
+
+Fly.Name = "Fly"
+Fly.Parent = Locals
+Fly.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Fly.Position = UDim2.new(0.0301347058, 0, 0.121527769, 0)
+Fly.Size = UDim2.new(0, 357, 0, 39)
+Fly.Font = Enum.Font.SourceSansBold
+Fly.Text = "     Fly"
+Fly.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fly.TextSize = 23.000
+Fly.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_4.Parent = Fly
+
+Speed.Name = "Speed"
+Speed.Parent = Locals
+Speed.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Speed.Position = UDim2.new(0.0301347058, 0, 0.319444418, 0)
+Speed.Size = UDim2.new(0, 357, 0, 39)
+Speed.Font = Enum.Font.SourceSansBold
+Speed.Text = "     Speed"
+Speed.TextColor3 = Color3.fromRGB(255, 255, 255)
+Speed.TextSize = 23.000
+Speed.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_5.Parent = Speed
+
+CashEsp.Name = "CashEsp"
+CashEsp.Parent = Locals
+CashEsp.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+CashEsp.Position = UDim2.new(0.0275100339, 0, 0.520833313, 0)
+CashEsp.Size = UDim2.new(0, 357, 0, 39)
+CashEsp.Font = Enum.Font.SourceSansBold
+CashEsp.Text = "     Cash Esp"
+CashEsp.TextColor3 = Color3.fromRGB(255, 255, 255)
+CashEsp.TextSize = 23.000
+CashEsp.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_6.Parent = CashEsp
+
+Anonymous.Name = "Anonymous"
+Anonymous.Parent = Locals
+Anonymous.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Anonymous.Position = UDim2.new(0.0301347058, 0, 0.722222209, 0)
+Anonymous.Size = UDim2.new(0, 357, 0, 39)
+Anonymous.Font = Enum.Font.SourceSansBold
+Anonymous.Text = "     Anonymous"
+Anonymous.TextColor3 = Color3.fromRGB(255, 255, 255)
+Anonymous.TextSize = 23.000
+Anonymous.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_7.Parent = Anonymous
+
+Home.Name = "Home"
+Home.Parent = DayTime
+Home.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Home.BorderColor3 = Color3.fromRGB(22, 22, 22)
+Home.BorderSizePixel = 0
+Home.LayoutOrder = 1
+Home.Position = UDim2.new(0.0605657846, 0, 0.208587348, 0)
+Home.Size = UDim2.new(0, 81, 0, 29)
+Home.ZIndex = 2
+Home.Font = Enum.Font.Highway
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextSize = 20.000
+Home.TextStrokeColor3 = Color3.fromRGB(22, 22, 22)
+
+ImageLabel.Parent = Home
+ImageLabel.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(22, 22, 22)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Position = UDim2.new(-0.304617763, 0, -0.0370145068, 0)
+ImageLabel.Size = UDim2.new(0, 30, 0, 30)
+ImageLabel.ZIndex = -1
+ImageLabel.Image = "http://www.roblox.com/asset/?id=6035145364"
+
+Local.Name = "Local"
+Local.Parent = DayTime
+Local.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Local.BorderColor3 = Color3.fromRGB(22, 22, 22)
+Local.BorderSizePixel = 0
+Local.LayoutOrder = 1
+Local.Position = UDim2.new(0.0605658144, 0, 0.302811652, 0)
+Local.Size = UDim2.new(0, 81, 0, 26)
+Local.ZIndex = 2
+Local.Font = Enum.Font.Highway
+Local.Text = "Local"
+Local.TextColor3 = Color3.fromRGB(255, 255, 255)
+Local.TextSize = 20.000
+Local.TextStrokeColor3 = Color3.fromRGB(22, 22, 22)
+
+Selectedaccount_circle.Name = "Selected: account_circle"
+Selectedaccount_circle.Parent = Local
+Selectedaccount_circle.BackgroundTransparency = 1.000
+Selectedaccount_circle.Position = UDim2.new(-0.290554106, 0, -0.0903588161, 0)
+Selectedaccount_circle.Size = UDim2.new(0, 27, 0, 28)
+Selectedaccount_circle.Image = "rbxassetid://2790547157"
+
+ScrollBar.Name = "ScrollBar"
+ScrollBar.Parent = DayTime
+ScrollBar.Active = true
+ScrollBar.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ScrollBar.BorderColor3 = Color3.fromRGB(22, 22, 22)
+ScrollBar.BorderSizePixel = 0
+ScrollBar.Position = UDim2.new(0, 0, 0.186490878, 0)
+ScrollBar.Size = UDim2.new(0, 112, 0, 304)
+ScrollBar.ScrollBarThickness = 0
+
+Grey.Name = "Grey"
+Grey.Parent = DayTime
+Grey.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Grey.Position = UDim2.new(0.235771596, 0, 0.208556145, 0)
+Grey.Size = UDim2.new(0, 377, 0, 286)
+Grey.ZIndex = -1
+
+UICorner_8.Parent = Grey
+
+Information.Name = "Information"
+Information.Parent = Grey
+Information.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Information.BorderSizePixel = 0
+Information.Position = UDim2.new(0.0698724911, 0, 0.0108974995, 0)
+Information.Size = UDim2.new(0, 133, 0, 27)
+Information.ZIndex = -1
+Information.Font = Enum.Font.SourceSansBold
+Information.Text = "Information"
+Information.TextColor3 = Color3.fromRGB(184, 184, 184)
+Information.TextSize = 20.000
+Information.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_9.Parent = Information
+
+Bell.Name = "Bell"
+Bell.Parent = Information
+Bell.BackgroundColor3 = Color3.fromRGB(116, 103, 35)
+Bell.BackgroundTransparency = 1.000
+Bell.BorderSizePixel = 0
+Bell.Position = UDim2.new(-0.189976484, 0, 0, 0)
+Bell.Size = UDim2.new(0, 27, 0, 27)
+Bell.Image = "rbxassetid://2790458276"
+Bell.ImageColor3 = Color3.fromRGB(254, 188, 107)
+
+Info1.Name = "Info1"
+Info1.Parent = Grey
+Info1.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Info1.Position = UDim2.new(0, 0, 0.195990056, 0)
+Info1.Size = UDim2.new(0, 377, 0, 35)
+Info1.ZIndex = -1
+Info1.Font = Enum.Font.SourceSans
+Info1.Text = "Scripts arent working so this is just the UI."
+Info1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info1.TextSize = 14.000
+
+UICorner_10.Parent = Info1
+
+Info2.Name = "Info2"
+Info2.Parent = Grey
+Info2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Info2.Position = UDim2.new(0, 0, 0.424926877, 0)
+Info2.Size = UDim2.new(0, 377, 0, 33)
+Info2.ZIndex = -1
+Info2.Font = Enum.Font.SourceSans
+Info2.Text = "Any Tips Please conatact in the Discord."
+Info2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info2.TextSize = 14.000
+
+UICorner_11.Parent = Info2
+
+Info3.Name = "Info3"
+Info3.Parent = Grey
+Info3.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Info3.Position = UDim2.new(0, 0, 0.658376336, 0)
+Info3.Size = UDim2.new(0, 377, 0, 33)
+Info3.ZIndex = -1
+Info3.Font = Enum.Font.SourceSans
+Info3.Text = "Note: You have to close the catergorie to go to the next script."
+Info3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info3.TextSize = 14.000
+
+UICorner_12.Parent = Info3
+
+Settingimage.Name = "Settingimage"
+Settingimage.Parent = Grey
+Settingimage.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Settingimage.BorderSizePixel = 0
+Settingimage.Position = UDim2.new(0.908819914, 0, 0.00630948273, 0)
+Settingimage.Size = UDim2.new(0, 34, 0, 31)
+Settingimage.Font = Enum.Font.SourceSans
+Settingimage.Text = ""
+Settingimage.TextColor3 = Color3.fromRGB(0, 0, 0)
+Settingimage.TextSize = 14.000
+
+Setting.Name = "Setting"
+Setting.Parent = Settingimage
+Setting.BackgroundTransparency = 1.000
+Setting.BorderSizePixel = 0
+Setting.Position = UDim2.new(0.0127419867, 0, -0.0247792881, 0)
+Setting.Size = UDim2.new(0, 33, 0, 33)
+Setting.ZIndex = -1
+Setting.Image = "http://www.roblox.com/asset/?id=6031280882"
+
+UICorner_13.Parent = Settingimage
+
+Settings.Name = "Settings"
+Settings.Parent = Grey
+Settings.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Settings.Size = UDim2.new(0, 377, 0, 287)
+Settings.Visible = false
+Settings.ZIndex = -1
+
+UICorner_14.Parent = Settings
+
+TextLabel.Parent = Settings
+TextLabel.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TextLabel.Position = UDim2.new(1.84880638, 0, 1.67247379, 0)
+TextLabel.Size = UDim2.new(0, 111, 0, 39)
+TextLabel.Visible = false
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Bye!"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+TextLabel.TextTransparency = 0.330
+
+UICorner_15.Parent = TextLabel
+
+Exit.Name = "Exit"
+Exit.Parent = Settings
+Exit.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Exit.Position = UDim2.new(0.596816957, 0, 0.0104529615, 0)
+Exit.Size = UDim2.new(0, 86, 0, 81)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = ""
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextSize = 14.000
+
+ImageLabel_2.Parent = Exit
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.BorderSizePixel = 0
+ImageLabel_2.Position = UDim2.new(0, 0, 0.00157523446, 0)
+ImageLabel_2.Size = UDim2.new(0, 86, 0, 80)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=6023426922"
+
+TextLabel_2.Parent = Exit
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TextLabel_2.Position = UDim2.new(0.307692319, 0, 1.09876537, 0)
+TextLabel_2.Size = UDim2.new(0, 30, 0, 19)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "LEAVE DAYTIME"
+TextLabel_2.TextColor3 = Color3.fromRGB(22, 22, 22)
+TextLabel_2.TextSize = 25.000
+
+UICorner_16.Parent = TextLabel_2
+
+UICorner_17.Parent = Exit
+
+Theme.Name = "Theme"
+Theme.Parent = Settings
+Theme.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Theme.Position = UDim2.new(0.129973471, 0, 0.0104529615, 0)
+Theme.Size = UDim2.new(0, 86, 0, 81)
+Theme.Font = Enum.Font.SourceSans
+Theme.Text = ""
+Theme.TextColor3 = Color3.fromRGB(0, 0, 0)
+Theme.TextSize = 14.000
+
+TextLabel_3.Parent = Theme
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TextLabel_3.Position = UDim2.new(0.307692319, 0, 1.09876537, 0)
+TextLabel_3.Size = UDim2.new(0, 30, 0, 19)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Theme"
+TextLabel_3.TextColor3 = Color3.fromRGB(22, 22, 22)
+TextLabel_3.TextSize = 25.000
+
+UICorner_18.Parent = TextLabel_3
+
+UICorner_19.Parent = Theme
+
+ImageLabel_3.Parent = Theme
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.BorderSizePixel = 0
+ImageLabel_3.Size = UDim2.new(0, 86, 0, 80)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=6031572320"
+
+Teleport.Name = "Teleport"
+Teleport.Parent = DayTime
+Teleport.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Teleport.BorderColor3 = Color3.fromRGB(22, 22, 22)
+Teleport.BorderSizePixel = 0
+Teleport.LayoutOrder = 1
+Teleport.Position = UDim2.new(0.0605658144, 0, 0.404415935, 0)
+Teleport.Size = UDim2.new(0, 81, 0, 26)
+Teleport.Font = Enum.Font.Highway
+Teleport.Text = "Teleport"
+Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
+Teleport.TextSize = 20.000
+Teleport.TextStrokeColor3 = Color3.fromRGB(22, 22, 22)
+
+ImageLabel_4.Parent = Teleport
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.BorderSizePixel = 0
+ImageLabel_4.Position = UDim2.new(-0.290554106, 0, -0.15384616, 0)
+ImageLabel_4.Size = UDim2.new(0, 28, 0, 30)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id=6023426925"
+
+Blur.Name = "Blur"
+Blur.Parent = DayTime
+Blur.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Blur.BorderSizePixel = 0
+Blur.Position = UDim2.new(-0.686783671, 0, 1.62834203, 0)
+Blur.Size = UDim2.new(0, 9, 0, 6)
+Blur.ZIndex = -1
+
+Blur_2.Name = "Blur"
+Blur_2.Parent = Blur
+Blur_2.AnchorPoint = Vector2.new(0, 0.5)
+Blur_2.BackgroundTransparency = 1.000
+Blur_2.BorderColor3 = Color3.fromRGB(53, 53, 53)
+Blur_2.BorderSizePixel = 0
+Blur_2.Position = UDim2.new(35.9519348, 0, -70.6625748, 0)
+Blur_2.Size = UDim2.new(12.3517475, 47, 62.4094429, 47)
+Blur_2.Image = "rbxassetid://6015897843"
+Blur_2.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Blur_2.ImageTransparency = 0.200
+Blur_2.ScaleType = Enum.ScaleType.Slice
+Blur_2.SliceCenter = Rect.new(49, 49, 450, 450)
+
+UICorner_20.Parent = Blur_2
+
+Blur_3.Name = "Blur"
+Blur_3.Parent = Blur
+Blur_3.AnchorPoint = Vector2.new(0, 0.5)
+Blur_3.BackgroundTransparency = 1.000
+Blur_3.BorderColor3 = Color3.fromRGB(53, 53, 53)
+Blur_3.BorderSizePixel = 0
+Blur_3.Position = UDim2.new(48.4852715, 0, -96.0478134, 0)
+Blur_3.Size = UDim2.new(44.1808281, 47, 11.6389742, 47)
+Blur_3.Image = "rbxassetid://6015897843"
+Blur_3.ImageColor3 = Color3.fromRGB(255, 0, 0)
+Blur_3.ImageTransparency = 0.200
+Blur_3.ScaleType = Enum.ScaleType.Slice
+Blur_3.SliceCenter = Rect.new(49, 49, 450, 450)
+
+UICorner_21.Parent = Blur_3
+
+Teleports.Name = "Teleports"
+Teleports.Parent = DayTime
+Teleports.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Teleports.Position = UDim2.new(0.235771596, 0, 0.203208551, 0)
+Teleports.Size = UDim2.new(0, 377, 0, 288)
+Teleports.Visible = false
+
+UICorner_22.Parent = Teleports
+
+Bank.Name = "Bank"
+Bank.Parent = Teleports
+Bank.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Bank.Position = UDim2.new(0.0248575136, 0, 0.128472209, 0)
+Bank.Size = UDim2.new(0, 357, 0, 39)
+Bank.Font = Enum.Font.SourceSansBold
+Bank.Text = "     Bank"
+Bank.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bank.TextSize = 23.000
+Bank.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_23.Parent = Bank
+
+FoodStore.Name = "Food Store"
+FoodStore.Parent = Teleports
+FoodStore.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+FoodStore.Position = UDim2.new(0.0275100339, 0, 0.322916627, 0)
+FoodStore.Size = UDim2.new(0, 357, 0, 39)
+FoodStore.Font = Enum.Font.SourceSansBold
+FoodStore.Text = "     Food Store"
+FoodStore.TextColor3 = Color3.fromRGB(255, 255, 255)
+FoodStore.TextSize = 23.000
+FoodStore.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_24.Parent = FoodStore
+
+Casino.Name = "Casino"
+Casino.Parent = Teleports
+Casino.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+Casino.Position = UDim2.new(0.0275100339, 0, 0.524305522, 0)
+Casino.Size = UDim2.new(0, 357, 0, 39)
+Casino.Font = Enum.Font.SourceSansBold
+Casino.Text = "     Casino"
+Casino.TextColor3 = Color3.fromRGB(255, 255, 255)
+Casino.TextSize = 23.000
+Casino.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_25.Parent = Casino
+
+GunStore.Name = "GunStore"
+GunStore.Parent = Teleports
+GunStore.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+GunStore.Position = UDim2.new(0.0248575136, 0, 0.732638836, 0)
+GunStore.Size = UDim2.new(0, 357, 0, 39)
+GunStore.Font = Enum.Font.SourceSansBold
+GunStore.Text = "     Gun Store"
+GunStore.TextColor3 = Color3.fromRGB(255, 255, 255)
+GunStore.TextSize = 23.000
+GunStore.TextXAlignment = Enum.TextXAlignment.Left
+
+UICorner_26.Parent = GunStore
+
+-- Scripts:
+
+local function FFYQOR_fake_script() -- Fly.Script 
+	local script = Instance.new('Script', Fly)
+
+	local Players = CFrame.new(0, 5, 0) * CFrame.fromEulerAnglesXYZ(math.rad(45), 0, 0)
+end
+coroutine.wrap(FFYQOR_fake_script)()
+local function JIADH_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	local Speed = 250
+	
+	script.Parent.Speed = {}
+	
+	local Speed = Instance.new("Speed")
+	
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 250
+	
+	game.Players.LocalPlayer.Character.Humanoid.Speed = 250
+end
+coroutine.wrap(JIADH_fake_script)()
+local function LGYEMZ_fake_script() -- Home.LocalScript 
+	local script = Instance.new('LocalScript', Home)
+
+	local Grey = script.Parent.Parent.Grey
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		Grey.Visible = true
+	end)
+end
+coroutine.wrap(LGYEMZ_fake_script)()
+local function RDQBLE_fake_script() -- Local.LocalScript 
+	local script = Instance.new('LocalScript', Local)
+
+	local Locals = script.Parent.Parent.Locals
+	local ison = false
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if not ison then
+			ison = true
+			Locals.Visible = true
+		else
+			if ison then
+				ison = false
+				Locals.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(RDQBLE_fake_script)()
+local function EYYP_fake_script() -- Settingimage.LocalScript 
+	local script = Instance.new('LocalScript', Settingimage)
+
+	local Settings = script.Parent.Parent.Settings
+	local ison = false
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if not ison then
+			ison = true
+			Settings.Visible = true
+		else
+			if ison then
+				ison = false
+				Settings.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(EYYP_fake_script)()
+local function ELLQ_fake_script() -- Exit.LocalScript 
+	local script = Instance.new('LocalScript', Exit)
+
+	local DayTime = script.Parent.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		DayTime.Visible = false
+	end)
+	
+end
+coroutine.wrap(ELLQ_fake_script)()
+local function YTEKNG_fake_script() -- Theme.LocalScript 
+	local script = Instance.new('LocalScript', Theme)
+
+	local Blur = script.Parent.Parent.Parent.Parent.Blur
+	local ison = false
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if not ison then
+			ison = true
+			Blur.Visible = true
+		else
+			if ison then
+				ison = false
+				Blur.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(YTEKNG_fake_script)()
+local function GBNXN_fake_script() -- Teleport.LocalScript 
+	local script = Instance.new('LocalScript', Teleport)
+
+	local Teleports = script.Parent.Parent.Teleports
+	local ison = false
+	
+	script.Parent.MouseButton1Down:Connect(function()
+		if not ison then
+			ison = true
+			Teleports.Visible = true
+		else
+			if ison then
+				ison = false
+				Teleports.Visible = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(GBNXN_fake_script)()
